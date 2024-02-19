@@ -1,0 +1,3 @@
+C:/Users/naima/CLionProjects/Algorytmy Laby/Lab12 (STL)/cmake-build-debug/CMakeFiles/Lab12__STL_.dir
+C:/Users/naima/CLionProjects/Algorytmy Laby/Lab12 (STL)/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/naima/CLionProjects/Algorytmy Laby/Lab12 (STL)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
