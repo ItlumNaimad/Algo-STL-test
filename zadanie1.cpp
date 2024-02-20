@@ -18,18 +18,21 @@ namespace zad1 {
 
         switch(choice) {
             case 1:
+            {
                 stack<int> myStack;
                 stos::operateOnStack(myStack);
                 break;
-            case 2: {
-            
+            }
+            case 2:
+            {
                 queue<int> myQueue;
-                displayQueue(myQueue);
+                kolejka::displayQueue(myQueue);
                 break;
             }
-            case 3: {
+            case 3:
+            {
                 vector <int> myVector;
-                displayVector(myVector);
+                wektor::displayVector(myVector);
                 break;
             }
             default:
@@ -37,7 +40,7 @@ namespace zad1 {
                 break;
         }
             }
-    }
+
     namespace stos {
         template<typename T>
         void displayStack(const stack<T> &s) {
@@ -154,6 +157,41 @@ namespace zad1 {
                         break;
                 }
             } while (option != 9);
+        }
+    }
+    namespace kolejka
+    {
+        template<typename T>
+        void displayQueue(const queue<T>& q)
+        {
+            if (q.empty()) {
+                cout << "Queue is empty" << endl;
+                return;
+            }
+
+            queue<T> tempQueue = q;
+            cout << "Elements in the queue:" << endl;
+            while (!tempQueue.empty()) {
+                cout << tempQueue.front() << " ";
+                tempQueue.pop();
+            }
+            cout << endl;
+        }
+    }
+    namespace wektor
+    {
+        template<typename T>
+        void displayVector(const std::vector<T>& v) {
+            if (v.empty()) {
+                cout << "Vector is empty" << endl;
+                return;
+            }
+
+            cout << "Elements in the vector:" << endl;
+            for (const auto& elem : v) {
+                cout << elem << " ";
+            }
+            cout << endl;
         }
     }
 }

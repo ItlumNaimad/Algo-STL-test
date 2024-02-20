@@ -19,4 +19,20 @@ namespace zad1 {
         template<typename T>
         void operateOnStack(stack<T>& myStack);
     }
+    namespace kolejka {
+        template<typename T>
+        void displayQueue(const queue<T>& q);
+
+        template<typename T>
+        void operateOnQueue(queue<T>& myQueue);
+    }
+
+    namespace wektor {
+        template<typename T>
+        void displayVector(const vector<T>& v);
+
+        template<typename T>
+        void operateOnVector(vector<T>& myVector);
+    }
 }
+
