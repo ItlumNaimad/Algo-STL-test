@@ -12,6 +12,7 @@ namespace zad1 {
     void menu();
 
     // Wewnątrz przestrzeni nazw zad1 można utworzyć kolejną przestrzeń nazw
+    // Przeszteń nazw dla stosu
     namespace stos {
         template<typename T>
         void displayStack(const stack<T>& s);
@@ -19,6 +20,7 @@ namespace zad1 {
         template<typename T>
         void operateOnStack(stack<T>& myStack);
     }
+    // Przeszteń nazw dla kolejki
     namespace kolejka {
         template<typename T>
         void displayQueue(const queue<T>& q);
@@ -26,7 +28,7 @@ namespace zad1 {
         template<typename T>
         void operateOnQueue(queue<T>& myQueue);
     }
-
+    // Przeszteń nazw dla wektora
     namespace wektor {
         template<typename T>
         void displayVector(const vector<T>& v);
@@ -35,4 +37,15 @@ namespace zad1 {
         void operateOnVector(vector<T>& myVector);
     }
 }
-
+/**
+     * @brief Funkcje dla zadania pierwsze
+     *
+     *  Przestrzeń nazw zad1 zawiera menu, oraz przestrzenie nazw dla stosu, kolejki i wektora
+     *  Menu zawiera prosty interfejs tekstowy, gdzie użytkownik wybiera jaką zmienną chce zrobić
+     *  między wektorem, kolejką i stosem. Następnie mam podział na przestrzenie nazw:
+     *  stos
+     *  kolejka
+     *  wektor
+     *  Każda z przestrzeni nazw ma podobne funkcje displayNAZWA_STRUKTURY_DANYCH
+     *  i operateOnNAZWA_STRUKTURY_DANYCH
+     */

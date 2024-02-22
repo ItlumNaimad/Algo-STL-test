@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Lab12__STL_ main.cpp
         zadanie1.cpp
-        zadanie1.h)
+        zadanie1.h
+        zadanie2.cpp
+        zadanie2.h)
